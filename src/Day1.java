@@ -58,7 +58,7 @@ public class Day1 {
             for(Map.Entry<String,String> entry : hashMap.entrySet())
             {
 
-                s = s.replaceAll(entry.getKey(), entry.getKey()+entry.getValue()+entry.getKey());
+                s = s.replaceAll(entry.getKey(), entry.getKey().charAt(0)+entry.getValue()+entry.getKey().charAt(entry.getKey().length()-1));
             }
             for(int i = 0 ; i <s.length() ; i++)
             {
