@@ -33,7 +33,7 @@ public class Day1 {
                     }
                 }
             }
-            String res = String.valueOf(one)+String.valueOf(two);
+            String res = Character.toString(one)+Character.toString(two);
             ans+=Integer.valueOf(res);
         }
         return ans;
@@ -77,7 +77,7 @@ public class Day1 {
                 }
 
             }
-            String res = String.valueOf(one)+String.valueOf(two);
+            String res = Character.toString(one)+Character.toString(two);
             ans+=Integer.valueOf(res);
         }
 
@@ -111,6 +111,7 @@ public class Day1 {
         }
         Long ans1 = part1(arr);
         Long ans2 = part2(arr);
+        System.out.println(ans1);
         System.out.println(ans2);
 
     }
